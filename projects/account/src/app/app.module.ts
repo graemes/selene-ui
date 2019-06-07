@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
+import { MatToolbarModule } from '@angular/material';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { GlobalnavModule } from 'globalnav';
 import { DeviceModule } from './modules/device/device.module';
 import { ProfileModule } from './modules/profile/profile.module';
-import { SharedModule as SharedLibModule } from 'shared';
 import { SharedModule } from 'shared';
 import { SkillModule } from './modules/skill/skill.module';
 
@@ -20,14 +21,14 @@ import { SkillModule } from './modules/skill/skill.module';
             BrowserModule,
             BrowserAnimationsModule,
             DashboardModule,
+            DeviceModule,
             GlobalnavModule,
             HttpClientModule,
-            DeviceModule,
+            MatToolbarModule,
             ProfileModule,
-            SharedLibModule,
             SharedModule,
             SkillModule,
-            AppRoutingModule
+            AppRoutingModule,
         ],
         bootstrap: [ AppComponent ]
     }

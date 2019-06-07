@@ -1,5 +1,13 @@
-<globalnav-sidenav [mycroftUrls]="environment.mycroftUrls">
-    <div appBody id="account-body">
-        <router-outlet></router-outlet>
-    </div>
-</globalnav-sidenav>
+<!--<globalnav-sidenav [mycroftUrls]="environment.mycroftUrls">-->
+<!--    <div appBody id="account-body">-->
+<!--        <router-outlet></router-outlet>-->
+<!--    </div>-->
+<!--</globalnav-sidenav>-->
+<shared-topnav
+        [mycroftUrls]="environment.mycroftUrls"
+        [siteName]="'MY ACCOUNT'"
+        [menuItems]="menuItems"
+        (selectedMenuItem)="onMenuItemSelect($event)"
+>
+</shared-topnav>
+<router-outlet></router-outlet>

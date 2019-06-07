@@ -1,0 +1,9 @@
+@import "~@angular/material/theming";
+@import "mycroft-colors";
+
+mat-toolbar {
+    background-color: mat-color($mycroft-primary);
+    img {
+        height: 40px;
+    }
+}
