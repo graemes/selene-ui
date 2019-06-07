@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 })
 export class AppComponent implements OnInit {
     public environment = environment;
+    public menuItems = [];
     public user$: Observable<User>;
 
     constructor(private service: AppService) {
