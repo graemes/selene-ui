@@ -1,9 +1,8 @@
-<globalnav-sidenav [mycroftUrls]="environment.mycroftUrls">
-    <!--
-        Inject the single sign on app into the <mat-sidenav-content> component
-        of the global navigation menu library.
-    -->
-    <div appBody id="account-body">
-        <router-outlet></router-outlet>
-    </div>
-</globalnav-sidenav>
+<shared-topnav
+        [mycroftUrls]="environment.mycroftUrls"
+        [siteName]="'SINGLE SIGN ON'"
+        [menuItems]="menuItems"
+>
+</shared-topnav>
+<router-outlet></router-outlet>
+

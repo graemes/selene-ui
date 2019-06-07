@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 export class AppComponent implements OnInit {
     title = 'Mycroft Login';
     public environment = environment;
+    public menuItems = [];
     public socialLoginDataFound = false;
 
     constructor () {
