@@ -4,27 +4,25 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {
     MatButtonModule,
     MatButtonToggleModule,
+    MatProgressSpinnerModule,
     MatSnackBarModule,
-    MatProgressSpinnerModule
+    MatToolbarModule
 } from '@angular/material';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SharedComponent } from './shared.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
-import { MaintenancePageComponent } from './maintenance-page/maintenance-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TopnavComponent } from './topnav/topnav.component';
 
 
 @NgModule({
     declarations: [
-        SharedComponent,
         SnackbarComponent,
-        MaintenancePageComponent,
         PageNotFoundComponent,
+        TopnavComponent,
     ],
     entryComponents: [
         SnackbarComponent,
-        MaintenancePageComponent,
         PageNotFoundComponent,
     ],
     imports: [
@@ -34,13 +32,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         MatButtonModule,
         MatButtonToggleModule,
         MatSnackBarModule,
-        MatProgressSpinnerModule
+        MatProgressSpinnerModule,
+        MatToolbarModule
     ],
     exports: [
-        SharedComponent,
-        SnackbarComponent,
-        MaintenancePageComponent,
         PageNotFoundComponent,
+        SnackbarComponent,
+        TopnavComponent
     ],
 })
 export class SharedModule { }

@@ -1,0 +1,26 @@
+mat-toolbar {
+    background-color: #22a7f0;
+    margin-bottom: 32px;
+
+    // Use inline css to display the logo at top of sidebar because Angular
+    // libraries do not support static assets yet.
+   .mycroft-logo {
+       background: url("topnav-logo.svg") no-repeat;
+       height: 40px;
+       width: 180px;
+    }
+
+    fa-icon {
+        color: white;
+    }
+
+    .mat-h2 {
+        color: white;
+        margin: 0;
+    }
+
+    .menu-item {
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -4,4 +4,5 @@
 
 export * from './lib/snackbar/snackbar.component';
 export * from './lib/page-not-found/page-not-found.component';
+export * from './lib/topnav/topnav.component';
 export * from './lib/shared.module';

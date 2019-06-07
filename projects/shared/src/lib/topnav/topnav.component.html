@@ -1,0 +1,13 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="start center">
+    <span fxFlex="20" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
+        <a [href]="mycroftUrls.wordPress">
+            <div id=mycroft-logo class="mycroft-logo"></div>
+        </a>
+        <fa-icon [icon]="breadCrumbIcon"></fa-icon>
+        <span class="mat-h2">{{siteName}}</span>
+    </span>
+    <span fxFlex fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="48px">
+        <span *ngFor="let menuItem of menuItems" class="menu-item" (click)="onMenuItemClick(menuItem)">{{menuItem}}</span>
+    </span>
+    <span fxFlex="20"></span>
+</mat-toolbar>
